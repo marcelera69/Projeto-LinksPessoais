@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;500 & display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+:root{
+    --letrapadrao: 'Inter', sans-serif;
+    --corTexto: white;
+    --imgFundo: url(assets/img/bg-mobile.jpg);
+    --cor-borda-botao: rgba(255, 255, 255, 0.5);
+    --cor-borda-botao-hover: white;
+    --cor-fundo-botao: rgba(255, 255, 255, 0.1);  
+    --cor-fundo-botao-hover: rgba(0, 0, 0, 0.05);
+    --img-switch: url(assets/img/moon-stars.svg);
+}
+
+.light{
+    --corTexto: black;
+    --imgFundo: url(assets/img/bg-mobile-light.jpg);
+    --cor-borda-botao: rgba(0, 0, 0, 0.5);
+    --cor-borda-botao-hover: black;
+    --cor-fundo-botao: rgba(0, 0, 0, 0.1);
+    --cor-fundo-botao-hover: rgba(255, 255, 255, 0.05);
+    --img-switch: url(assets/img/sun.svg);
+}
+
+
+/*corpo*/
+body{
+    background: var(--imgFundo) top center no-repeat;
+    background-size: cover;
+
+    font-family: var(--letrapadrao);
+    color: var(--corTexto);
+}
+
+/*main*/
+main{
+    width: 360px;
+    
+    padding: 0px 24px;
+    margin: 56px auto auto auto;
+}
+
+/*profile*/
+div#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+div#profile > p{
+    margin-top: 8px;
+
+    font-weight: 500;
+    line-height: 24px;
+}
+
+div#profile > img{
+    width: 112px;
+}
+
+/*switch*/
+div#switch{
+    margin: 5px auto;
+    position: relative;
+    width: 64px;
+}
+
+div#switch button{
+    width: 32px;
+    height: 32px;
+
+    background: var(--img-switch) no-repeat center;
+    background-color: white;
+
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.light div#switch button{
+    right:0;
+    left: initial;
+}
+
+div#switch span{
+    display: block;
+
+    width: 64px;
+    height: 24px;
+
+    background-color: var(--cor-fundo-botao);
+    border: 1px solid var(--cor-borda-botao);
+    border-radius: 99990px;
+}
+
+/*navegação*/
+nav{
+    padding: 24px 0px;
+}
+
+nav ul{
+    list-style: none; 
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+nav ul li a{
+    display: flex;
+    justify-content: center;
+
+    color: var(--corTexto);
+    text-decoration: none;
+    font-weight: 500;
+
+    padding: 16px 24px;
+    background-color: var(--cor-fundo-botao);
+    border: 1px solid var(--cor-borda-botao);
+    border-radius: 8px;
+
+}
+
+nav ul li a:hover{
+    transition-duration: 0.5s;
+    
+    background-color: var(--cor-fundo-botao-hover);
+    border: 1.5px solid var(--cor-borda-botao-hover);
+}
+
+/*icones redes socias*/
+div#redes-sociais{
+    display: flex;
+    justify-content: center;
+
+    gap: 16px;
+    padding: 24px 0px;
+
+    font-size: 26px;
+    
+}
+
+div#redes-sociais ion-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+div#redes-sociais ion-icon:hover{
+    transition-duration: 0.4s ;
+    background-color: rgba(169, 169, 169, 0.678);
+    border-radius: 50%;
+}
+
+/*rodapé*/
+footer{
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a{
+    color: var(--corTexto);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
