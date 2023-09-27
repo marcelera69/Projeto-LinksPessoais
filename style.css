@@ -34,14 +34,17 @@ body{
     background: var(--imgFundo) top center no-repeat;
     background-size: cover;
 
+    height: 100vh;
+
     font-family: var(--letrapadrao);
     color: var(--corTexto);
 }
 
 /*main*/
 main{
-    width: 360px;
-    
+    width: 100%;
+    max-width: 588px;
+
     padding: 0px 24px;
     margin: 56px auto auto auto;
 }
@@ -181,3 +184,13 @@ footer a:hover{
 }
 
 
+/*Media queries*/
+@media (min-width:700px ){
+    :root{
+        --imgFundo: url(assets/img/bg-desktop.jpg);
+    }
+
+    .light{
+        --imgFundo: url(assets/img/bg-desktop-light.jpg);
+    }
+}
