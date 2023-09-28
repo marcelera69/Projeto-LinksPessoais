@@ -1,14 +1,12 @@
-https://marcelera69.github.io/Projeto-Rocketseat/index.html
+# Projeto Links Pessoais
 
-# NLW eSports
-
-![preview](./.github/preview.png)
+![preview](assets/img/Preview.png)
 
 > Trilha Explorer
 
-Projeto construído do evento Next Level Week da Rocketseat.
+Projeto construído do curso Discover da Rocketseat.
 
-[🔗 Clique aqui para acessar](https://maykbrito.github.io/nlw-esports-explorer/)
+[🔗 Clique aqui para acessar](https://marcelera69.github.io/Projeto-Rocketseat/index.html)
 
 
 ## 🛠 Tecnologias
@@ -20,4 +18,4 @@ Projeto construído do evento Next Level Week da Rocketseat.
 
 ## 💛 Contato
 
-maykbrito@gmail.com
+ceeloalves@hotmail.com
