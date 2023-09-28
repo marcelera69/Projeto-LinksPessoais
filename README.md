@@ -14,7 +14,7 @@ Projeto construído do curso Discover da Rocketseat.
 - HTML
 - CSS
 - JavaScript
-- Git e Github
+- Git 
 
 ## 💛 Contato
 
